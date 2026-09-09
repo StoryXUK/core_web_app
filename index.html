@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b0b">
+  <meta name="description" content="A premium fibodo custom coaching app experience.">
+  <title>FORM — Powered by fibodo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#" aria-label="FORM home"><span class="brand-mark">F</span><span>FORM</span></a>
+    <nav class="desktop-nav">
+      <button class="nav-item active" data-view="home"><span data-icon="home"></span><em>Overview</em></button>
+      <button class="nav-item" data-view="bookings"><span data-icon="calendar"></span><em>Bookings</em></button>
+      <button class="nav-item" data-view="plans"><span data-icon="bolt"></span><em>My plan</em></button>
+      <button class="nav-item" data-view="nutrition"><span data-icon="leaf"></span><em>Nutrition</em></button>
+      <button class="nav-item" data-view="messages"><span data-icon="message"></span><em>Messages</em><b class="notice">2</b></button>
+      <button class="nav-item" data-view="vouchers"><span data-icon="gift"></span><em>Vouchers</em></button>
+    </nav>
+    <div class="sidebar-foot"><span>Powered by</span><strong>fibodo</strong></div>
+  </aside>
+
+  <main class="shell">
+    <header class="topbar">
+      <div><p class="eyebrow">Wednesday, 9 September</p><h1 id="pageTitle">Good afternoon, Alex.</h1></div>
+      <div class="top-actions"><button class="icon-btn" aria-label="Notifications"><span data-icon="bell"></span><i></i></button><button class="profile"><span>AM</span><b>Alex Morgan<small>Premium member</small></b><span data-icon="chevron"></span></button></div>
+    </header>
+
+    <section class="view active" id="home">
+      <div class="hero-card">
+        <div class="hero-copy"><span class="pill">TODAY'S SESSION</span><p class="micro">WEEK 6 · STRENGTH</p><h2>Lower body<br>power.</h2><p>Build strength through controlled, compound movement.</p><div class="hero-meta"><span><b>48</b> min</span><span><b>7</b> exercises</span><span><b>High</b> intensity</span></div><button class="primary" data-start>Start workout <span data-icon="arrow"></span></button></div>
+        <div class="hero-visual" aria-hidden="true"><div class="orb"></div><div class="rings"></div><div class="stat-float"><small>READINESS</small><strong>92<span>%</span></strong><i></i></div></div>
+      </div>
+
+      <div class="section-heading"><div><p class="eyebrow">YOUR DAY</p><h3>Keep your momentum.</h3></div><button class="text-btn" data-view-link="plans">View full plan <span data-icon="arrow"></span></button></div>
+      <div class="dashboard-grid">
+        <article class="card next-session"><div class="card-top"><span class="icon-chip"><span data-icon="calendar"></span></span><span class="status">CONFIRMED</span></div><p class="eyebrow">NEXT BOOKING</p><h4>1:1 Performance Session</h4><p class="muted">Thursday · 10:30–11:30</p><div class="coach"><span class="avatar">JT</span><div><b>Jordan Taylor</b><small>Head Coach</small></div><button class="round-btn" aria-label="Message Jordan" data-message><span data-icon="message"></span></button></div></article>
+        <article class="card progress-card"><div class="card-top"><div><p class="eyebrow">WEEKLY PROGRESS</p><h4>4 of 5 sessions</h4></div><strong class="score">80%</strong></div><div class="bars" aria-label="Weekly activity"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i></i></div><p class="muted">One more session completes your strongest week yet.</p></article>
+        <article class="card meal-card"><div class="meal-art"><span data-icon="leaf"></span></div><div><p class="eyebrow">MEAL OF THE DAY</p><h4>Sesame chicken bowl</h4><p class="muted">42g protein · 520 kcal</p><button class="text-btn" data-view-link="nutrition">View recipe <span data-icon="arrow"></span></button></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="bookings"><div class="section-heading"><div><p class="eyebrow">SCHEDULE</p><h3>Your bookings.</h3></div><button class="primary" id="newBooking">Book a session <span data-icon="plus"></span></button></div><div class="booking-layout"><div class="calendar-card card"><div class="calendar-head"><button class="round-btn" aria-label="Previous month">‹</button><h4>September 2026</h4><button class="round-btn" aria-label="Next month">›</button></div><div class="weekdays"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div class="dates" id="dates"></div></div><div class="agenda"><p class="eyebrow">UPCOMING</p><article class="booking-item"><time><b>10</b>SEP</time><div><h4>1:1 Performance Session</h4><p>10:30 · Jordan Taylor · Studio 2</p></div><span class="status">CONFIRMED</span></article><article class="booking-item"><time><b>12</b>SEP</time><div><h4>Strength Lab</h4><p>09:00 · Maya Chen · Main floor</p></div><span class="status wait">3 SPACES</span></article><article class="booking-item"><time><b>15</b>SEP</time><div><h4>Movement Review</h4><p>17:30 · Jordan Taylor · Studio 1</p></div><span class="status">CONFIRMED</span></article></div></div></section>
+
+    <section class="view" id="plans"><div class="section-heading"><div><p class="eyebrow">PERSONALISED FOR YOU</p><h3>Your training plan.</h3></div><div class="week-switch"><button>‹</button><span>Week 6 of 8</span><button>›</button></div></div><div class="plan-grid"><article class="program-feature"><div><span class="pill">TODAY · 48 MIN</span><h2>Lower body power</h2><p>7 exercises · High intensity</p><button class="primary" data-start>Start workout <span data-icon="play"></span></button></div><div class="program-number">06</div></article><div class="exercise-list"><article class="exercise complete"><span class="exercise-num">01</span><div><h4>Back squat</h4><p>4 sets · 6 reps · 2 min rest</p></div><button class="video-btn" data-video="Back squat"><span data-icon="play"></span> Demo</button></article><article class="exercise"><span class="exercise-num">02</span><div><h4>Romanian deadlift</h4><p>4 sets · 8 reps · 90 sec rest</p></div><button class="video-btn" data-video="Romanian deadlift"><span data-icon="play"></span> Demo</button></article><article class="exercise"><span class="exercise-num">03</span><div><h4>Bulgarian split squat</h4><p>3 sets · 10 reps each side</p></div><button class="video-btn" data-video="Bulgarian split squat"><span data-icon="play"></span> Demo</button></article><article class="exercise"><span class="exercise-num">04</span><div><h4>Sled push</h4><p>5 rounds · 20 metres</p></div><button class="video-btn" data-video="Sled push"><span data-icon="play"></span> Demo</button></article></div></div></section>
+
+    <section class="view" id="nutrition"><div class="section-heading"><div><p class="eyebrow">FUEL YOUR PROGRESS</p><h3>Nutrition plan.</h3></div><div class="nutrition-total"><span>Daily target</span><b>2,450 kcal</b></div></div><div class="macro-row"><div class="macro"><span>PROTEIN</span><b>182g</b><i style="--fill:82%"></i></div><div class="macro"><span>CARBS</span><b>255g</b><i style="--fill:68%"></i></div><div class="macro"><span>FATS</span><b>74g</b><i style="--fill:56%"></i></div></div><div class="meal-list"><article class="meal-row"><div class="meal-index">01</div><div><small>BREAKFAST · 07:30</small><h4>Protein oats & blueberries</h4><p>Oats, whey, blueberries, almond butter</p></div><div class="meal-cal"><b>540</b><small>KCAL</small></div><button class="round-btn"><span data-icon="chevron"></span></button></article><article class="meal-row featured"><div class="meal-index">02</div><div><small>LUNCH · 12:30</small><h4>Sesame chicken bowl</h4><p>Chicken, jasmine rice, greens, sesame dressing</p></div><div class="meal-cal"><b>620</b><small>KCAL</small></div><button class="round-btn"><span data-icon="chevron"></span></button></article><article class="meal-row"><div class="meal-index">03</div><div><small>SNACK · 15:30</small><h4>Greek yoghurt & fruit</h4><p>Yoghurt, strawberries, mixed seeds</p></div><div class="meal-cal"><b>290</b><small>KCAL</small></div><button class="round-btn"><span data-icon="chevron"></span></button></article><article class="meal-row"><div class="meal-index">04</div><div><small>DINNER · 19:00</small><h4>Salmon, potatoes & greens</h4><p>Roast salmon, new potatoes, seasonal vegetables</p></div><div class="meal-cal"><b>710</b><small>KCAL</small></div><button class="round-btn"><span data-icon="chevron"></span></button></article></div></section>
+
+    <section class="view" id="messages"><div class="messages-shell"><div class="conversations"><div class="section-heading compact"><div><p class="eyebrow">SUPPORT</p><h3>Messages.</h3></div></div><button class="conversation active"><span class="avatar online">JT</span><div><b>Jordan Taylor</b><p>Perfect — keep the tempo controlled...</p></div><time>14:24</time></button><button class="conversation"><span class="avatar">MC</span><div><b>Maya Chen</b><p>Your mobility session is ready.</p></div><time>MON</time></button></div><div class="chat"><header><span class="avatar online">JT</span><div><h4>Jordan Taylor</h4><p>Head Coach · Online</p></div><button class="round-btn"><span data-icon="video"></span></button></header><div class="chat-body" id="chatBody"><div class="bubble coach-bubble">Great work on yesterday’s session. How are the legs feeling today?<time>13:48</time></div><div class="bubble user-bubble">Feeling good. A little tight through the hips, but energy is high.<time>14:02</time></div><div class="bubble coach-bubble">Perfect — keep the tempo controlled today. I’ve added a short mobility warm-up before your squats.<time>14:24</time></div></div><form class="composer" id="messageForm"><input id="messageInput" aria-label="Message Jordan" placeholder="Message Jordan..." autocomplete="off"><button aria-label="Send message"><span data-icon="send"></span></button></form></div></div></section>
+
+    <section class="view" id="vouchers"><div class="voucher-hero"><p class="eyebrow">SHARE THE EXPERIENCE</p><h2>A gift that<br>moves with them.</h2><p>Give personalised coaching, premium sessions or complete freedom to choose.</p></div><div class="voucher-grid"><button class="voucher" data-value="50"><small>FORM GIFT</small><strong>£50</strong><span>Digital voucher</span><i>F</i></button><button class="voucher selected" data-value="100"><small>FORM GIFT</small><strong>£100</strong><span>Digital voucher</span><i>F</i></button><button class="voucher" data-value="200"><small>FORM GIFT</small><strong>£200</strong><span>Digital voucher</span><i>F</i></button></div><div class="voucher-checkout card"><div><p class="eyebrow">YOUR SELECTION</p><h3 id="voucherValue">£100 gift voucher</h3><p class="muted">Delivered instantly by email with your personal message.</p></div><button class="primary" id="buyVoucher">Purchase securely <span data-icon="lock"></span></button></div></section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button class="nav-item active" data-view="home"><span data-icon="home"></span><em>Home</em></button><button class="nav-item" data-view="bookings"><span data-icon="calendar"></span><em>Book</em></button><button class="nav-item" data-view="plans"><span data-icon="bolt"></span><em>Plan</em></button><button class="nav-item" data-view="messages"><span data-icon="message"></span><em>Chat</em></button><button class="nav-item" data-view="nutrition"><span data-icon="leaf"></span><em>Meals</em></button></nav>
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="modal-icon"><span data-icon="play"></span></div><p class="eyebrow">FORM COACHING</p><h3 id="modalTitle">Ready to train?</h3><p id="modalText">Your session timer and exercise guidance are ready.</p><button class="primary" data-close>Let’s go <span data-icon="arrow"></span></button></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
